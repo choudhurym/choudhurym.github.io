@@ -21,7 +21,7 @@ Throughout my career, I’ve remained committed to impactful work—building AI 
 
 Thanks for stopping by—I invite you to explore my work and connect!
 
-**Research Interests:** web science, digital libraries, healthcare, applied machine learning, scholarly big data
+**Research Interests:** web science, digital libraries, healthcare, applied machine learning, scholarly big data, natural language processing, computer vision.
 
 ## Research
 
@@ -29,7 +29,7 @@ I was the member of the ODU Web Science and Digital Libraries (WS-DL) Research G
 
 <a href="https://oduwsdl.github.io/" target="_blank" class="btn btn--mcw"><i class="fas fa-fw fa-link"></i><span> WS-DL Webpage</span></a>
 <a href="https://ws-dl.blogspot.com/search/label/MuntabirChoudhury" target="_blank" class="btn btn--mcw"><i class="fab fa-blogger" style="color: {{ page.blogger-color }}"></i><span>Blogs</span></a>
-<a href="https://github.com/lamps-lab" target="_blank" class="btn btn--mcw"><i class="fab fa-fw fa-github" style="color: {{ page.github-color }}"></i><span> LAMP-SYS GitHub</span></a>
+<a href="https://github.com/lamps-lab/ETDMiner" target="_blank" class="btn btn--mcw"><i class="fab fa-fw fa-github" style="color: {{ page.github-color }}"></i><span> LAMP-SYS ETDMiner GitHub</span></a>
 {: style="text-align: center;"}
 <!-- <a href="https://twitter.com/WebSciDL" target="_blank" class="btn btn--mcw"><i class="fab fa-twitter" style="color: {{ page.twitter-color }}"></i><span> WS-DL Twitter</span></a> -->
 
