@@ -6,6 +6,10 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+  - /home/
+twitter-color: "#55acee"
+github-color: "#171516"
+blogger-color: "#F37100"
 ---
 Welcome! I’m an AI researcher and machine learning professional with a passion for using technology to solve real-world problems that matter—especially in healthcare, science, and public service.
 
