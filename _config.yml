@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Muntabir Choudhury"
+title                    : "Muntabir Hasan Choudhury"
 title_separator          : "-"
 name                     : &name "Muntabir Hasan Choudhury"
 description              : &description "Research Fellow at U.S. Food & Drug Administration"
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Muntabir Choudhury, Ph.D."
-  avatar           : "profile.png"
+  avatar           : "MuntabirChoudhury.png"
   bio              : "Research Fellow at U.S. Food & Drug Administration"
   location         : "Sterling, VA"
   employer         :
