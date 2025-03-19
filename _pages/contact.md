@@ -13,7 +13,4 @@ Email: [muntabirhasan.choudhury@fda.hhs.gov](mailto:muntabirhasan.choudhury@fda.
 Dr. Muntabir Hasan Choudhury
 45574 Silver Pond Sq.
 Sterling, VA 20165
-
-
-## For GPD matters
 Email: [muntabirc@gmail.com](mailto:muntabirc@gmail.com)
