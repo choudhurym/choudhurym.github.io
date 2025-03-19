@@ -21,7 +21,8 @@ Thanks for stopping by—I invite you to explore my work and connect!
 
 ## Research
 
-I was the member of the ODU Web Science and Digital Libraries (WS-DL) Research Group and Lab for Applied Machine Learning and Natural Language Processing Systems (LAMP-SYS) group.
+I was the member of the ODU Web Science and Digital Libraries (WS-DL) Research Group and Lab for Applied Machine Learning and Natural Language Processing Systems (LAMP-SYS).
+
 <a href="https://oduwsdl.github.io/" target="_blank" class="btn btn--mcw"><i class="fas fa-fw fa-link"></i><span> WS-DL Webpage</span></a>
 <a href="https://ws-dl.blogspot.com/search/label/MuntabirChoudhury" target="_blank" class="btn btn--mcw"><i class="fab fa-blogger" style="color: {{ page.blogger-color }}"></i><span>Blogs</span></a>
 <a href="https://github.com/lamps-lab" target="_blank" class="btn btn--mcw"><i class="fab fa-fw fa-github" style="color: {{ page.github-color }}"></i><span> LAMP-SYS GitHub</span></a>
