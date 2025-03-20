@@ -20,13 +20,13 @@ def generate_file(output_dir, outfile, title, type_value, permalink, paper_strin
         fp.write(paper_string)
 
 def generate_files(bibTexFile, outputDir):
-    years = list(range(2019, 2025))
-    # Skipping the year 1998 and 2002 -- no papers published
-    years.remove(1998)  
-    years.remove(2002)
+    years = list(range(2019, 2026))
+    # Skipping the year 2019 and 2025 -- no papers published
+    years.remove(2019)  
+    years.remove(2025)
 
     for year in years:
-        if year == 1998 or year == 2002:
+        if year == 2019 or year == 2025:
             continue
         outfile = f"{year}.md"
         paper_string = bib_query(bibTexFile, f"(self.get('YEAR') == \"{year}\")", "!self.get('PUBDATE')", "100")
