@@ -7,8 +7,10 @@ redirect_from:
   - /resume
 ---
 
-<iframe src="files/Muntabir_Resume_short.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+## Download Resume
+<iframe src="https://drive.google.com/file/d/1WStzsRHBDWtJPL4C8ICaF8thrWMF6c59/view?usp=drive_link" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
 
+## Download CV
 <!-- {% include base_path %}
 
 Education
