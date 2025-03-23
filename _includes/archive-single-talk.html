@@ -43,8 +43,13 @@
 
 <div class="talk-entry">
   {% if post.image and post.embed %}
-    <a href="{{ post.embed }}" target="_blank">
-      <img src="{{ post.image }}" alt="Teaser Image" style="width:100%; max-width:300px;">
+    <a href="{{ post.embed }}" target="_blank" style="position: relative; display: inline-block; max-width: 300px;">
+      <img src="{{ post.image }}" alt="Teaser Image" style="width: 100%; display: block;">
+
+      <!-- YouTube Play Button Overlay -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_(2017).svg"
+           alt="Play Video" 
+           style="position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; transform: translate(-50%, -50%); opacity: 0.8;">
     </a>
   {% endif %}
 
