@@ -12,23 +12,41 @@
   {% assign title = post.title %}
 {% endif %}
 
-
 <div class="talk-entry">
+  <!-- Teaser Image with YouTube Play Button -->
   {% if post.image and post.embed %}
-    <a href="{{ post.embed }}" target="_blank" style="position: relative; display: inline-block; max-width: 300px;">
-      <img src="{{ post.image }}" alt="Teaser Image" style="width: 100%; display: block;">
+    <div style="position: relative; display: inline-block; max-width: 400px;">
+      <a href="{{ post.embed }}" target="_blank">
+        <img src="{{ post.image }}" alt="Teaser Image" style="width: 100%; display: block; border-radius: 8px;">
 
-      <!-- YouTube Play Button Overlay -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_(2017).svg"
-           alt="Play Video" 
-           style="position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; transform: translate(-50%, -50%); opacity: 0.8;">
-    </a>
+        <!-- Play Button Overlay -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_(2017).svg"
+             alt="Play Video" 
+             style="position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; transform: translate(-50%, -50%); opacity: 0.8;">
+      </a>
+      <!-- Venue and Date Caption -->
+      <div style="font-size: 0.85rem; margin-top: 6px; color: #555;">
+        <strong>{{ post.venue }}</strong> | <strong>{{ post.date | date: "%B %d, %Y" }}</strong>
+      </div>
+    </div>
   {% endif %}
 
-  <h3>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  <!-- Title linking to the embedded slides/PDF page -->
+  <h3 style="margin-top: 12px;">
+    <a href="{{ post.url | relative_url }}" style="color: #007acc;">
+      {{ title }}
+    </a>
   </h3>
 
-  <p>{{ post.excerpt }}</p>
-  <p><strong>Venue:</strong> {{ post.venue }} | <strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}</p>
+  <!-- Optional Excerpt -->
+  {% if post.excerpt %}
+    <p>{{ post.excerpt }}</p>
+  {% endif %}
 </div>
+
+<!-- Optional styling -->
+<style>
+.talk-entry {
+  margin-bottom: 40px;
+}
+</style>
