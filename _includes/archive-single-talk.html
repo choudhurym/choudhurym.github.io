@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="talk-entry">
-  <!-- Teaser Image with YouTube Play Button -->
+  <!-- Image linked to YouTube -->
   {% if post.image and post.embed %}
     <div style="position: relative; display: inline-block; max-width: 400px;">
       <a href="{{ post.embed }}" target="_blank">
@@ -24,29 +24,25 @@
              alt="Play Video" 
              style="position: absolute; top: 50%; left: 50%; width: 64px; height: 64px; transform: translate(-50%, -50%); opacity: 0.8;">
       </a>
-      <!-- Venue and Date Caption -->
+
+      <!-- Caption with Venue and Date -->
       <div style="font-size: 0.85rem; margin-top: 6px; color: #555;">
         <strong>{{ post.venue }}</strong> | <strong>{{ post.date | date: "%B %d, %Y" }}</strong>
       </div>
     </div>
   {% endif %}
 
-  <!-- Title linking to the embedded slides/PDF page -->
+  <!-- Title linked to full talk page -->
   <h3 style="margin-top: 12px;">
     <a href="{{ post.url | relative_url }}" style="color: #007acc;">
       {{ title }}
     </a>
   </h3>
-
-  <!-- Optional Excerpt -->
-  {% if post.excerpt %}
-    <p>{{ post.excerpt }}</p>
-  {% endif %}
 </div>
 
-<!-- Optional styling -->
 <style>
 .talk-entry {
   margin-bottom: 40px;
 }
 </style>
+
