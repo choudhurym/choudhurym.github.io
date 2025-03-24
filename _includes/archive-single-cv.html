@@ -12,7 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<!-- <div class="{{ include.type | default: "list" }}__item">
+<div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <li>
     {% if include.type == "grid" and teaser %}
@@ -39,46 +39,4 @@
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
     </li>
  </article>
-</div> -->
-
-<div class="talk-card">
-  <!-- Teaser image with Play Button -->
-  <div class="teaser-container" style="position: relative; display: inline-block;">
-    <a href="{{ post.embed }}" target="_blank">
-      <img src="{{ post.header.teaser }}" alt="Talk teaser" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
-      <!-- Play button overlay -->
-      <img src="https://img.icons8.com/ios-filled/100/ffffff/play-button-circled--v1.png" alt="Play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 64px; opacity: 0.8;">
-    </a>
-    <!-- Caption below image -->
-    <div style="font-size: 0.85rem; margin-top: 6px; color: #555;">
-      <strong>{{ post.venue }}</strong>, {{ post.location }}<br>
-      <strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}
-    </div>
-  </div>
-
-  <!-- Title linking to embedded slides/pdf -->
-  <h3 style="margin-top: 12px;">
-    <a href="{{ post.url | relative_url }}" style="color: #007acc;">
-      {{ post.title }}
-    </a>
-  </h3>
-
-  <!-- Optional excerpt -->
-  {% if post.excerpt %}
-    <p>{{ post.excerpt }}</p>
-  {% endif %}
-
-  <!-- PDF link -->
-  {% if post.pdf %}
-    <a href="{{ post.pdf }}" target="_blank" style="font-size: 0.9rem; color: #007acc;">
-      Download Paper (arXiv)
-    </a>
-  {% endif %}
 </div>
-
-<!-- Optional styling -->
-<style>
-.talk-card {
-  margin-bottom: 40px;
-}
-</style>
