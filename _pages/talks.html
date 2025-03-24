@@ -5,8 +5,19 @@ permalink: /talks/
 author_profile: true
 ---
 
-<div class="grid__wrapper">
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html type="grid" %}
-{% endfor %}
+<div class="talks-grid">
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html type="grid" %}
+  {% endfor %}
 </div>
+
+<style>
+/* Talks Grid Styling */
+.talks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  align-items: start;
+}
+</style>
